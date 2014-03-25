@@ -1,22 +1,36 @@
 // thunkify.js
 
+(function () {
 'use strict';
 
-function thunkify(fn) {
+// thunkify(fn) or
+// thunkify(ctx, fn) or
+// thunkify.call(ctx, fn)
+function thunkify(ctx, fn) {
+  // fn
+  if (typeof fn !== 'function') {
+    fn = ctx;
+    ctx = this;
+  }
+  // ctx, fn
+  if (typeof fn !== 'function') {
+    throw new TypeError('argument must be a function');
+  }
+
   return function () {
-    var cb, results, called, ctx;
+    var cb, results, called;
+
     arguments[arguments.length++] = function () {
-      results = arguments;
-      ctx = this;
+      if (!results) results = arguments;
       if (!cb || called) return;
       called = true;
       cb.apply(ctx, results);
     };
 
-    fn.apply(this, arguments);
+    fn.apply(ctx, arguments);
 
     return function (fn) {
-      cb = fn;
+      if (!cb) cb = fn;
       if (!results || called) return;
       called = true;
       cb.apply(ctx, results);
@@ -25,3 +39,5 @@ function thunkify(fn) {
 }
 
 exports = module.exports = thunkify;
+
+})();
