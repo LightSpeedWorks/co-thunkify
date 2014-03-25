@@ -1,7 +1,7 @@
 aa-thunkify - async-await-thunkify
 ===========
 
-  [English version](README.md#aa-thunkify---async-await-thunkify)
+  [English version](README.md#readme)
 
   通常の Node の関数を thunk を返す関数に変換します。
   ジェネレータ・ベースのフロー制御に非常に使い易いものになります。
