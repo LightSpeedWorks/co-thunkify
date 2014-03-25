@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/LightSpeedWorks/aa-thunkify/issues"
   },
-  "homepage": "https://github.com/LightSpeedWorks/aa-thunkify",
+  "homepage": "https://github.com/LightSpeedWorks/aa-thunkify#readme",
   "scripts": {
     "test": "cd test && node --harmony thunkify-work-main && exit 1"
   }
