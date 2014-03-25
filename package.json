@@ -1,28 +1,31 @@
 {
   "name": "aa-thunkify",
-  "version": "0.0.1",
-  "description": "async await thunkify",
+  "version": "0.0.2",
+  "description": "Turn regular node function into a thunk. [Async Await Thunkify]",
   "main": "lib/thunkify.js",
-  "scripts": {
-    "test": "cd test && node --harmony thunkify-work-main && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LightSpeedWorks/aa-thunkify.git"
+  "dependencies": {},
+  "devDependencies": {
+    "co": ">=3.0.5"
   },
   "keywords": [
+    "aa-thunkify",
     "thunkify",
+    "thunk",
     "co",
     "aa",
     "async-await"
   ],
   "author": "LightSpeedC",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LightSpeedWorks/aa-thunkify.git"
+  },
   "bugs": {
     "url": "https://github.com/LightSpeedWorks/aa-thunkify/issues"
   },
   "homepage": "https://github.com/LightSpeedWorks/aa-thunkify",
-  "devDependencies": {
-    "co": ">=3.0.5"
+  "scripts": {
+    "test": "cd test && node --harmony thunkify-work-main && exit 1"
   }
 }
