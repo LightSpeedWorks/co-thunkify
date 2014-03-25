@@ -4,7 +4,7 @@
   "description": "async await thunkify",
   "main": "lib/thunkify.js",
   "scripts": {
-    "test": "cd test && node --harmony thunkify-test && exit 1"
+    "test": "cd test && node --harmony thunkify-work-main && exit 1"
   },
   "repository": {
     "type": "git",
