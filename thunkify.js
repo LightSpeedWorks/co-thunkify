@@ -4,22 +4,22 @@
 
 function thunkify(fn) {
   return function () {
-    var callback, results, called, context;
+    var cb, results, called, ctx;
     arguments[arguments.length++] = function () {
       results = arguments;
-      context = this;
-      if (!callback || called) return;
+      ctx = this;
+      if (!cb || called) return;
       called = true;
-      callback.apply(context, results);
+      cb.apply(ctx, results);
     };
 
     fn.apply(this, arguments);
 
     return function (fn) {
-      callback = fn;
+      cb = fn;
       if (!results || called) return;
       called = true;
-      callback.apply(context, results);
+      cb.apply(ctx, results);
     };
   };
 }
