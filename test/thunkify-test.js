@@ -2,7 +2,7 @@
 
 'use strict';
 
-var thunkify = require('../thunkify');
+var thunkify = require('../lib/thunkify');
 
 var fs = require('fs');
 var co = require('co');
