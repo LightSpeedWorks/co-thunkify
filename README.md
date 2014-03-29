@@ -1,5 +1,5 @@
-aa-thunkify - async-await-thunkify
-===========
+aa-thunkify - async await thunkify
+==================================
 
   Turn a regular node function into one which returns a thunk,
   useful for generator-based flow control.

@@ -1,5 +1,5 @@
-aa-thunkify - async-await-thunkify
-===========
+aa-thunkify - async await thunkify
+==================================
 
   [English version](README.md#readme)
 
@@ -7,14 +7,14 @@ aa-thunkify - async-await-thunkify
   ジェネレータ・ベースのフロー制御に非常に使い易いものになります。
 
 インストレーション
-------------
+------------------
 
 ```sh
 $ npm install aa-thunkify
 ```
 
 使用例
--------
+------
 
 ### [ファイル読み込みサンプル](examples/read-file-ex.js)
 
