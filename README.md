@@ -4,7 +4,7 @@ aa-thunkify - async-await-thunkify
   Turn a regular node function into one which returns a thunk,
   useful for generator-based flow control.
 
-  [Japanese version/日本語版](README_JP.md#readme)
+  [Japanese version/日本語版](README-JP.md#readme)
 
 Installation
 ------------
