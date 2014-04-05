@@ -10,8 +10,6 @@ var timer = thunkify(function (ms, cb) {
   setTimeout(cb, ms);
 });
 
-timer(5000);
-
 co(function*(){
   console.log('timer start...');
   yield timer(3000);
