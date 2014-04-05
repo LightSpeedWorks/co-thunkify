@@ -1,4 +1,4 @@
-co-thunkify - async await thunkify
+[co-thunkify](https://www.npmjs.org/package/co-thunkify) - async await thunkify for `co`
 ==================================
 
   Turn a regular node function into one which returns a thunk,

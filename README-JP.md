@@ -1,4 +1,4 @@
-co-thunkify - async await thunkify
+[co-thunkify](https://www.npmjs.org/package/co-thunkify) - async await thunkify for `co`
 ==================================
 
   [English version](README.md#readme)

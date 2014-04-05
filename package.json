@@ -1,16 +1,16 @@
 {
   "name": "co-thunkify",
-  "version": "0.0.2",
-  "description": "Turn regular node function into a thunk. [Async Await Thunkify]",
+  "version": "0.0.0",
+  "description": "Turn regular node function into a thunk for `co`.",
   "main": "lib/thunkify.js",
   "dependencies": {},
   "devDependencies": {
     "co": ">=3.0.5"
   },
   "keywords": [
-    "co-thunkify",
     "thunkify",
     "thunk",
+    "co-thunkify",
     "co",
     "aa",
     "async-await"
