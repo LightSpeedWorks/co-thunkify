@@ -1,7 +1,7 @@
 try {
-  var thunkify = require('aa-thunkify');
-} catch(err) {
   var thunkify = require('../lib/thunkify');
+} catch(err) {
+  var thunkify = require('aa-thunkify');
 }
 
 // timer - タイマー
