@@ -1,4 +1,4 @@
-aa-thunkify - async await thunkify
+co-thunkify - async await thunkify
 ==================================
 
   Turn a regular node function into one which returns a thunk,
@@ -10,7 +10,7 @@ Installation
 ------------
 
 ```sh
-$ npm install aa-thunkify
+$ npm install co-thunkify
 ```
 
 Examples
@@ -19,7 +19,7 @@ Examples
 ### [read file sample](examples/read-file-ex.js)
 
 ```js
-var thunkify = require('aa-thunkify');
+var thunkify = require('co-thunkify');
 var fs = require('fs');
 
 // read file
@@ -33,7 +33,7 @@ readFile('package.json', 'utf8')(function (err, buff) {
 ### [timer sample](examples/timer-ex.js)
 
 ```js
-var thunkify = require('aa-thunkify');
+var thunkify = require('co-thunkify');
 
 // timer
 var timer = thunkify(function (ms, cb) {

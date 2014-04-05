@@ -1,7 +1,7 @@
 try {
   var thunkify = require('../lib/thunkify');
 } catch(err) {
-  var thunkify = require('aa-thunkify');
+  var thunkify = require('co-thunkify');
 }
 var co = require('co');
 

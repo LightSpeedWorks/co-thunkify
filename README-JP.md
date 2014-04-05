@@ -1,4 +1,4 @@
-aa-thunkify - async await thunkify
+co-thunkify - async await thunkify
 ==================================
 
   [English version](README.md#readme)
@@ -10,7 +10,7 @@ aa-thunkify - async await thunkify
 ------------------
 
 ```sh
-$ npm install aa-thunkify
+$ npm install co-thunkify
 ```
 
 使用例
@@ -19,7 +19,7 @@ $ npm install aa-thunkify
 ### [ファイル読み込みサンプル](examples/read-file-ex.js)
 
 ```js
-var thunkify = require('aa-thunkify');
+var thunkify = require('co-thunkify');
 var fs = require('fs');
 
 // ファイル読み込み
@@ -33,7 +33,7 @@ readFile('package.json', 'utf8')(function (err, buff) {
 ### [タイマーサンプル](examples/timer-ex.js)
 
 ```js
-var thunkify = require('aa-thunkify');
+var thunkify = require('co-thunkify');
 
 // タイマー
 var timer = thunkify(function (ms, cb) {
