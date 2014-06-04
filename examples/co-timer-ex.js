@@ -1,6 +1,9 @@
+'use strict';
+
 try {
   var thunkify = require('../lib/thunkify');
 } catch(err) {
+  console.log('../lib/thunkify ' + err);
   var thunkify = require('co-thunkify');
 }
 var co = require('co');
