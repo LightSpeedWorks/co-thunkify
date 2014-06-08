@@ -13,7 +13,9 @@
 $ npm install co-thunkify
 ```
 
-[![npm][npm-co-thunkify.png]][npm-co-thunkify]
+[![npm][npm.png]][npm.lnk]
+[npm.lnk]: https://nodei.co/npm/co-thunkify
+[npm.png]: https://nodei.co/npm/co-thunkify.png
 
 使用例
 ------
@@ -54,6 +56,3 @@ timer(3000)(function () {
 ----------
 
   MIT
-
-[npm-co-thunkify]: https://nodei.co/npm/co-thunkify
-[npm-co-thunkify.png]: https://nodei.co/npm/co-thunkify.png

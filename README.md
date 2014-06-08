@@ -4,7 +4,7 @@
   Turn a regular node function into one which returns a thunk,
   useful for generator-based flow control.
 
-  [Japanese version/日本語版](README-JP.md#readme)
+  [Japanese version/■日本語版はこちら■](README-JP.md#readme)
 
 Installation
 ------------
@@ -13,7 +13,9 @@ Installation
 $ npm install co-thunkify
 ```
 
-[![npm][npm-co-thunkify.png]][npm-co-thunkify]
+[![npm][npm.png]][npm.lnk]
+[npm.lnk]: https://nodei.co/npm/co-thunkify
+[npm.png]: https://nodei.co/npm/co-thunkify.png
 
 Examples
 --------
@@ -54,6 +56,3 @@ License
 -------
 
   MIT
-
-[npm-co-thunkify]: https://nodei.co/npm/co-thunkify
-[npm-co-thunkify.png]: https://nodei.co/npm/co-thunkify.png
