@@ -3,7 +3,7 @@
 try {
   var thunkify = require('../lib/thunkify');
 } catch(err) {
-  console.log('../lib/thunkify ' + err);
+  console.log('../lib/thunkify ' + err.stack);
   var thunkify = require('co-thunkify');
 }
 var co = require('co');
