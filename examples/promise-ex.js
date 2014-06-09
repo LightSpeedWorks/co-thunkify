@@ -76,22 +76,21 @@ function Promise(setup) {
 
 } // Promise
 
-var no = 0;
-// timer
-function timer(ms) {
+// sleep
+function sleep(ms) {
   return new Promise(function (resolve, reject) {
-    setTimeout(function () { resolve(++no); }, ms)  // 1•bŒã‚É‚±‚Ìpromise‚ğ‰ğŒˆ‚·‚é
+    setTimeout(resolve, ms)  // ãƒŸãƒªç§’å¾Œã«ã“ã®promiseã‚’è§£æ±ºã™ã‚‹
   });
-} // timer
+} // sleep
 
 // main
 console.log('start');
-timer(500).then(function (res) {
+sleep(500).then(function (res) {
   console.log('first', res);
-  return timer(500);
+  return sleep(500);
 }).then(function (res) {
   console.log('second', res);
-  return 333; //return timer(500);
+  return 333; //return sleep(500);
 }).then(function (res) {
   console.log('third', res);
 });
