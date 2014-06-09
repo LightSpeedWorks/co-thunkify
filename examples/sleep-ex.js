@@ -7,12 +7,12 @@ try {
   var thunkify = require('co-thunkify');
 }
 
-// timer - タイマー
-var timer = thunkify(function (ms, cb) {
+// sleep - スリープ
+var sleep = thunkify(function (ms, cb) {
   setTimeout(cb, ms);
 });
 
-console.log('timer start...');
-timer(3000)(function () {
+console.log('sleep start...');
+sleep(3000)(function () {
   console.log('3 seconds later...');
 });

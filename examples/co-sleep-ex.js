@@ -8,17 +8,17 @@ try {
 }
 var co = require('co');
 
-// timer - タイマー
-var timer = thunkify(function (ms, cb) {
+// sleep - スリープ
+var sleep = thunkify(function (ms, cb) {
   setTimeout(cb, ms);
 });
 
 co(function*(){
-  console.log('timer start...');
-  yield timer(3000);
+  console.log('sleep start...');
+  yield sleep(3000);
   console.log('3 seconds later...');
 
-  var t = timer(500);
+  var t = sleep(500);
   yield t;
   console.log('0.5 seconds later... (1)');
   yield t;
