@@ -7,7 +7,7 @@ try {
   var thunkify = require('co-thunkify');
 }
 
-// sleep - 眠る
+// sleep - スリープ
 var sleep = thunkify(function (ms, cb) {
   setTimeout(cb, ms);
 });
