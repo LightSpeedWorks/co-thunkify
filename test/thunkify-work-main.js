@@ -48,4 +48,6 @@ co(function*(){
     }, 200);
   });
 
-})();
+}).then(
+  function (val) { console.info(val); },
+  function (err) { console.error(err); });
