@@ -9,6 +9,9 @@
 インストレーション
 ------------------
 
+[![NPM](https://nodei.co/npm/co-thunkify.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/co-thunkify/)
+[![NPM](https://nodei.co/npm-dl/co-thunkify.png?height=2)](https://nodei.co/npm/co-thunkify/)
+
 ```sh
 $ npm install co-thunkify
 ```
