@@ -120,7 +120,7 @@ function Callbacks(ctx) {
 exports.Callbacks = Callbacks;
 
 function isPromise(promise) {
-  return promise && promise.then && typeof promise.then === 'function';
+  return !!promise && typeof promise.then === 'function';
 }
 
 // TODO: NYI(Not Yet Implemented) Promise all race
