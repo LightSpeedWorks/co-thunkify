@@ -2,7 +2,7 @@
   "name": "co-thunkify",
   "version": "0.0.1",
   "description": "Turn regular node function into a thunk for `co`.",
-  "main": "lib/thunkify.js",
+  "main": "thunkify.js",
   "dependencies": {},
   "devDependencies": {
     "co": ">=4.5.2"
